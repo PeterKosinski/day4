@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Nav</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <style type="text/css">
+ 
+        body {
+          background-color: #292E37;
+        }
+        
+        nav {
+            font-size:0px;
+        }
+        
+        ul {
+            background-color: #1D2026 ;
+        }
+        
+        nav ul li a{
+            text-decoration:none;
+            display: block;
+            color: #fff;
+            font-family: roboto,sans-serif;
+            
+        }
+        
+        nav ul {
+            text-align: center;
+            list-style: none;
+            
+        }
+        
+        nav ul li {
+            font-size: 30px;
+            border-bottom: 1px solid #444;
+            padding: 10px 5px;
+            background-color: #1D2026;
+        }
+        
+         #home:hover {
+            transition: all 2s ease-in-out;
+            background-color: #555;
+            transform: rotateX(-720deg);
+           
+        }
+        
+    
+        #about:hover {
+            transition: all 2s ease-in-out;
+            background-color: #555;
+            transform: rotatey(720deg);
+           
+        }
+        
+        #portfolio:hover {
+            transition: all 2s ease-in-out;
+            background-color: #555;
+            transform: rotatez(-720deg);
+           
+        }
+        
+        #blog:hover {
+            transition: all 2s ease-in-out;
+            background-color: #555;
+            transform: scale(1.5 )
+           
+        }
+        
+        #contact:hover {
+            transition: all 2s ease-in-out;
+            background-color: #555;
+            transform: translate(200px, 00px);
+        }
+        
+        li:active {
+            background-color: grey;
+            
+        }
+        
+        nav ul li:last-of-type{
+            border-bottom:none;
+        }
+        
+@media screen and (min-width: 665px) {
+   nav ul li {
+        display: inline-block;
+        width: 120px;
+        font-size: 20px;
+        border-bottom: none;
+   }
+}
+        
+        </style>
+    </head>
+ 
+    <body>
+        
+          <nav>
+  <ul>
+     <li><a href="#" id="home">Home</a></li>
+     <li><a href="#" id="about">About</a></li>
+     <li><a href="#" id="portfolio">Portfolio</a></li>
+     <li><a href="#" id="blog">Blog</a></li>
+     <li><a href="#" id="contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+    </body>
+</html>
