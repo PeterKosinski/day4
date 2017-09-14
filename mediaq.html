@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+          
+			#container
+			{
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a fixed width*/
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+				padding-top: 10px;
+			}
+			.box{
+				display:block;
+				width: 100%;
+				height: px;
+				/*margin:10px;*/ /*pushing our element out of bounds*/
+				margin: 0 0 10px 0;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
+				text-align: center;
+				
+			}
+			#sidebar{
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				display: inline-block;
+				width: 460px;
+				margin-right: 5px;
+				border: dashed
+			
+				
+				
+			}
+			#content{
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				display: inline-block;
+				width: 460px;
+				margin-left: 35px;
+				border: dashed;
+				position: relative;
+				
+			}
+			
+			#owl{
+				float: right;
+				margin: 10px;
+			}
+			
+				#frog{
+				float: left;
+				margin: 10px;
+			}
+			
+			
+		
+		
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			
+		
+			<div id="sidebar" class="box"><h2>Sidebar</h2><img src="Images/owl.jpg" alt="Sleepy Owl" width="300" height="" id="owl"/><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="content" class="box"><h2>Content</h2><img src="Images/frog.jpg" alt="Sleepy Owl" width="300" height="" id="frog" /><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat.</p>
+			</div>
+	
+	</body>
+</html>
